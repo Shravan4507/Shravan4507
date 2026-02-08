@@ -1,57 +1,84 @@
-# 👋 Shravan
+<!-- Hero Banner -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=Shravan&fontAlign=50&fontAlignY=40&color=0:0f2027,100:203a43&fontColor=ffffff" />
+</p>
 
-**I build practical software, not demo toys.**  
-Focused on web apps, automation, and systems that solve real problems.
+<p align="center">
+  <b>Building real software. Shipping small, useful things. Learning fast.</b><br/>
+  Web • Automation • Systems
+</p>
 
----
-
-## ⚙️ What I’m working on
-- Shipping small but complete products (frontend + logic + deployment)
-- Building tools that reduce human effort (automation-first mindset)
-- Leveling up in full-stack development and UI engineering
-
----
-
-## 🧠 Tech I actually use
-**Languages:** JavaScript, TypeScript, Python  
-**Frontend:** React, Vite, HTML, CSS  
-**Backend:** Node.js (basics), REST APIs  
-**Tools:** Git, GitHub, Vercel, Figma  
-**Other:** JSON data modeling, UI/UX fundamentals
+<p align="center">
+  <a href="https://github.com/Shravan4507">
+    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github" />
+  </a>
+  <a href="https://www.linkedin.com/in/shravan45x">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" />
+  </a>
+</p>
 
 ---
 
-## 🚀 Featured Projects
-> A few things I’m proud of building. More coming.
-
-- **Let’s Know** – Name-based search engine over structured JSON data  
-  _React + Vite project focused on fast search and clean UI_
-
-- **QR Tools Hub** – All-in-one QR generator (UPI, URL, WiFi, Text, vCard)  
-  _React + TypeScript + CSS_
-
-- **Universal Cart (Chrome Extension)** – Smart cart across websites  
-  _Modern UI, local storage, content detection_
-
-*(I’m actively building and refining these. Expect changes.)*
-
----
-
-## 📌 What you’ll find here
-- Clean project structures  
-- UI-focused experiments  
-- Practical tools > academic demos  
-- Iterative improvements (I don’t abandon projects halfway)
+## 🧬 Current Focus
+<table>
+  <tr>
+    <td>🚧 Building</td>
+    <td>Frontend-heavy apps with real-world flows</td>
+  </tr>
+  <tr>
+    <td>🧠 Learning</td>
+    <td>System design basics + UI engineering</td>
+  </tr>
+  <tr>
+    <td>⚡ Optimizing</td>
+    <td>Developer experience, clean structures</td>
+  </tr>
+</table>
 
 ---
 
-## 📫 Let’s connect
+## 🧰 Tech Stack (what I actually touch)
+<p>
+  <img src="https://skillicons.dev/icons?i=js,ts,python,react,vite,html,css,nodejs,git,github,vercel,figma" />
+</p>
+
+---
+
+## 🚀 Highlight Reel
+| Project | What it does | Stack |
+|--------|---------------|-------|
+| **Let’s Know** | Fast name search over structured JSON | React + Vite |
+| **QR Tools Hub** | UPI, URL, WiFi, vCard QR generator | React + TS |
+| **Universal Cart** | Chrome extension for smart cart | JS + Extension APIs |
+
+> I ship, then polish. Expect iterations.
+
+---
+
+## 📊 GitHub Activity (proof of life)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Shravan4507&show_icons=true&theme=tokyonight" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shravan4507&theme=tokyonight" />
+</p>
+
+---
+
+## 🧭 How I build
+> Small scope → working MVP → ruthless iteration  
+> Pretty code is nice. Useful software wins.
+
+---
+
+## 📬 Ping me
 - GitHub: https://github.com/<your-username>  
 - LinkedIn: https://www.linkedin.com/in/<your-link>  
 - Email: yourmail@example.com  
 
 ---
 
-## 🧭 Philosophy
-Build small. Ship fast. Learn brutally.  
-Pretty code is nice. Useful software is better.
+<p align="center">
+  <i>“Build in public. Break things privately. Ship anyway.”</i>
+</p>
