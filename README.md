@@ -116,8 +116,8 @@
 ### ^\_~ GITHUB_ANALYTICS
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Shravan4507&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" height="190" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shravan4507&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117" height="190" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Shravan4507&show_icons=true&theme=tokyonight" height="180" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shravan4507&layout=compact&theme=tokyonight" height="180" alt="Top Languages" />
 </p>
 
 <p align="center">
