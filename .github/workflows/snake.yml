@@ -3,7 +3,7 @@ name: generate animation
 on:
   # run automatically every 24 hours
   schedule:
-    - cron: "0 */24 * * *"
+    - cron: "0 0 * * *"
 
   # allows to manually run the job at any time
   workflow_dispatch:
@@ -15,10 +15,13 @@ on:
 
 jobs:
   generate:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
     steps:
+      - uses: actions/checkout@v3
       # generates a snake game from a github user (Shravan4507) contributions graph, output a svg animation at <svg_out_path>
       - name: generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
