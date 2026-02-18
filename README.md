@@ -113,11 +113,10 @@
 
 ---
 
-### ^\_~ GITHUB_ANALYTICS
+### ^\_~ GITHUB_METRICS
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Shravan4507&show_icons=true&theme=tokyonight" height="180" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shravan4507&layout=compact&theme=tokyonight" height="180" alt="Top Languages" />
+  <img src="https://metrics.lecoq.io/Shravan4507?template=terminal&base.header=0&base.activity=0&base.community=0&languages=1&languages.limit=8&languages.sections=most-used&languages.details=bytes-size%2C+percentage&config.timezone=Asia%2FKolkata" width="100%" alt="GitHub Metrics" />
 </p>
 
 <p align="center">
