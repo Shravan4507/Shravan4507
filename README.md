@@ -128,8 +128,8 @@
 ### -.- FREQUENCY_SYNC
 
 <p align="center">
-  <a href="https://open.spotify.com/user/Shravan4507" target="_blank">
-    <img src="https://spotify-github-profile.vercel.app/api/view?uid=Shravan4507&cover_image=true&theme=tokyonight" alt="Spotify Now Playing" />
+  <a href="https://discord.com/users/844025108951597077" target="_blank">
+    <img src="https://lanyard.cnrad.dev/api/844025108951597077?theme=dark&bg=0d1117&animated=true" alt="Discord Presence" />
   </a>
 </p>
 
