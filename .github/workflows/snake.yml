@@ -31,6 +31,22 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
+      - name: generate github-metrics.svg
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: Shravan4507
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Kolkata
+          filename: github-metrics.svg
+          output_action: none # Prevent the action from pushing itself, we use ghaction-github-pages later
+
+      - name: move metrics to dist
+        run: |
+          mkdir -p dist
+          mv github-metrics.svg dist/
+
       # push the content of <build_dir> to a branch
       # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
       - name: push github-contribution-grid-snake.svg to the output branch

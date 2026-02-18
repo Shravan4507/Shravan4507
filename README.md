@@ -116,7 +116,7 @@
 ### ^\_~ GITHUB_METRICS
 
 <p align="center">
-  <img src="https://metrics.lecoq.io/Shravan4507?template=terminal&base.header=0&base.activity=0&base.community=0&languages=1&languages.limit=8&languages.sections=most-used&languages.details=bytes-size%2C+percentage&config.timezone=Asia%2FKolkata" width="100%" alt="GitHub Metrics" />
+  <img src="https://raw.githubusercontent.com/Shravan4507/Shravan4507/output/github-metrics.svg" width="100%" alt="GitHub Metrics" />
 </p>
 
 <p align="center">
