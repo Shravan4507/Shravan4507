@@ -45,7 +45,7 @@ jobs:
       - name: move metrics to dist
         run: |
           mkdir -p dist
-          mv github-metrics.svg dist/
+          mv /metrics_renders/github-metrics.svg dist/
 
       # push the content of <build_dir> to a branch
       # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
