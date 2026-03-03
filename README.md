@@ -113,11 +113,10 @@
 
 ---
 
-### ^\_~ GITHUB_METRICS
+### ^\_~ GITHUB_CITY
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Shravan4507/Shravan4507/output/github-metrics.svg" width="100%" alt="GitHub Metrics" />
-</p>
+<a href="https://github.com/google-deepmind/antigravity](https://www.thegitcity.com/dev/shravan4507" target="_blank" rel="noreferrer">
+</a>
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shravan4507&theme=tokyonight&bg_color=0d1117&hide_border=true&area=true" width="100%" alt="Contribution Graph" />
