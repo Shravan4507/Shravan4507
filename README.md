@@ -115,7 +115,7 @@
 
 ### ^\_~ GITHUB_CITY
 
-<a href="https://github.com/google-deepmind/antigravity](https://www.thegitcity.com/dev/shravan4507" target="_blank" rel="noreferrer">
+<a href="https://www.thegitcity.com/dev/shravan4507" target="_blank" rel="noreferrer">
 </a>
 
 <p align="center">
