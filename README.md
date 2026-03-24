@@ -2,7 +2,7 @@
   <img src="./assets/terminal_header.svg" width="800" />
 </p>
 
-# 📍 THE KERNAL FORUM
+# 📍 THE KERNAL ERROR
 
 > **A sanctuary for the architects of depth.**
 > Where the absolute core of the machine meets the elevated discourse of the humans who command it.
