@@ -1,23 +1,7 @@
-<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="400" fill="#000000"/>
-  
+<svg width="644" height="324" viewBox="78 38 644 324" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    @keyframes matrix-rain {
-      0% { transform: translateY(-400px); opacity: 0; }
-      10% { opacity: 1; }
-      90% { opacity: 1; }
-      100% { transform: translateY(400px); opacity: 0; }
-    }
-    
     @keyframes blink {
       50% { opacity: 0 }
-    }
-
-    .matrix-char {
-      fill: #00ff41;
-      font-family: 'Courier New', monospace;
-      font-size: 14px;
-      animation: matrix-rain 6s linear infinite;
     }
 
     .terminal-window {
@@ -39,21 +23,11 @@
     }
   </style>
 
-  <!-- Background Rain -->
-  <g opacity="0.15">
-    <text x="30" y="0" class="matrix-char" style="animation-delay: 0s;">01011</text>
-    <text x="120" y="0" class="matrix-char" style="animation-delay: 2.2s;">11010</text>
-    <text x="280" y="0" class="matrix-char" style="animation-delay: 1.5s;">00111</text>
-    <text x="450" y="0" class="matrix-char" style="animation-delay: 3.8s;">10101</text>
-    <text x="620" y="0" class="matrix-char" style="animation-delay: 0.8s;">01110</text>
-    <text x="760" y="0" class="matrix-char" style="animation-delay: 4.5s;">11111</text>
-  </g>
-
   <!-- Terminal UI -->
-  <rect x="80" y="40" width="640" height="320" rx="10" class="terminal-window" />
+  <rect x="80" y="40" width="640" height="320" rx="16" class="terminal-window" />
   
   <!-- Header Bar -->
-  <rect x="80" y="40" width="640" height="30" rx="10" fill="#00ff41" fill-opacity="0.15" />
+  <rect x="80" y="40" width="640" height="30" rx="16" fill="#00ff41" fill-opacity="0.15" />
   <circle cx="105" cy="55" r="5" fill="#ff5f56" />
   <circle cx="125" cy="55" r="5" fill="#ffbd2e" />
   <circle cx="145" cy="55" r="5" fill="#27c93f" />
@@ -79,5 +53,5 @@
   <pattern id="scanlines" width="800" height="4" patternUnits="userSpaceOnUse">
     <rect width="800" height="2" fill="rgba(0, 255, 65, 0.05)" />
   </pattern>
-  <rect width="800" height="400" fill="url(#scanlines)" style="pointer-events: none;" />
+  <rect x="80" y="40" width="640" height="320" rx="16" fill="url(#scanlines)" style="pointer-events: none;" />
 </svg>

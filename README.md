@@ -1,107 +1,164 @@
 <div align="center">
+  <img src="./assets/terminal_header.svg" width="800" />
+</div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,19,24,30&height=220&section=header&text=Shravan&fontSize=80&fontAlignY=32&animation=twinkling&fontColor=ffffff&desc=Full%20Stack%20Web%20Developer%20•%20AI%20Agents%20•%20Systems&descAlignY=65&descSize=20"/>
-<br><br>
-<br>
+<pre style="background: #000000ff; color: #cdd6f4; border-radius: 16px; padding: 20px; border: 1.5px solid #313244; font-family: 'Fira Code', 'Courier New', monospace; font-size: 15px; line-height: 1.6; text-align: left; max-width: 800px; margin: 0 auto;">
+<span style="color: #a6e3a1;">$ profile --user shravan</span>
+{
+  <span style="color: #89b4fa;">"focus"</span>: [<span style="color: #a6e3a1;">"Model Context Protocol (MCP)"</span>, <span style="color: #a6e3a1;">"Multi-Agent Pipelines"</span>],
+  <span style="color: #89b4fa;">"stack"</span>: [<span style="color: #a6e3a1;">"React / TypeScript"</span>, <span style="color: #a6e3a1;">"Python / Cloud-Native"</span>],
+  <span style="color: #89b4fa;">"motto"</span>: <span style="color: #f38ba8;">"Everything is RELATIVE..."</span>
+}
+</pre>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&multiline=false&repeat=true&width=600&height=50&lines=%E2%9A%A1+Building+Agentic+AI+Systems;%F0%9F%9A%80+Full-Stack+Developer;%F0%9F%8E%AF+Focusing+on+First-Principles;%F0%9F%92%A1+Turning+Ideas+into+Production+Code)](https://github.com/Shravan4507)
+<div align="center" style="margin-top: 24px;">
 
-<br>
+<a href="https://instagram.com/069.f5" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" style="border: 1.5px solid #313244;border-radius: 20px; margin: 0 4px;" alt="Instagram"/></a>
+<a href="https://github.com/Shravan4507"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" style="border: 1.5px solid #313244; border-radius: 20px; margin: 0 4px;" alt="GitHub"/></a>
 
-<a href="https://instagram.com/069.f5" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
-<a href="https://github.com/Shravan4507"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 
-<br><br>
-
-<img src="https://komarev.com/ghpvc/?username=Shravan4507&style=for-the-badge&color=6C63FF&label=PROFILE+VIEWS" alt="Profile Views"/>
-<img src="https://img.shields.io/github/followers/Shravan4507?style=for-the-badge&color=6C63FF&labelColor=1a1a2e&logo=github&label=Followers" alt="Followers"/>
-<img src="https://img.shields.io/github/stars/Shravan4507?style=for-the-badge&color=6C63FF&labelColor=1a1a2e&logo=github&label=Stars" alt="Stars"/>
+<img src="https://komarev.com/ghpvc/?username=Shravan4507&style=for-the-badge&color=1a1f26&label=PROFILE+VIEWS" style="border: 1.5px solid #313244; border-radius: 20px; margin: 0 4px;" alt="Profile Views"/>
+<img src="https://img.shields.io/github/followers/Shravan4507?style=for-the-badge&color=1a1f26&labelColor=0d1117&logo=github&label=Followers" style="border: 1.5px solid #313244; border-radius: 20px; margin: 0 4px;" alt="Followers"/>
+<img src="https://img.shields.io/github/stars/Shravan4507?style=for-the-badge&color=1a1f26&labelColor=0d1117&logo=github&label=Stars" style="border: 1.5px solid #313244; border-radius: 20px; margin: 0 4px;" alt="Stars"/>
 
 </div>
 
 ---
 
-<img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif">
+<pre style="background: #000000ff; color: #a6e3a1; border-radius: 16px; padding: 20px; border: 1.5px solid #313244; font-family: 'Fira Code', monospace; font-size: 14px; line-height: 1.5; text-align: left; max-width: 800px; margin: 0 auto;">
+SHRVAN-CORE BIOS V4.07 (C) 2026 SHRVAN4507 CORP.
+-------------------------------------------------
+CPU: COGNITIVE AGENTIC PROCESSOR @ 5.00GHz
+RAM: 64GB SYSTEM MEMORY TEST... OK
 
-### About Me
+DETECTING INTERFACES:
+- DEVICE 0: MODEL CONTEXT PROTOCOL (MCP) -> [ACTIVE]
+- DEVICE 1: CLAUDE AI WORKSPACE LINK     -> [ESTABLISHED]
+- DEVICE 2: GEMINI DYNAMIC CORE          -> [CONNECTED]
+- DEVICE 3: FULL-STACK WEB INSTANCE      -> [ONLINE]
 
-```yaml
-Name: Shravan
-Location: India 🇮🇳
-Education: Computer Science & Engineering
-Focus_areas:
-  - Agentic Systems & MCP
-  - Full-Stack Web Applications
-  - Cloud-Native Engineering
-Current_status: Designing, Building, Optimizing
-```
-
-<br clear="right"/>
-
----
-
-## 🛠️ Tech Arsenal
-
-<details open>
-<summary><b> Programming Languages</b></summary>
-<br>
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-
-</details>
-
-<details open>
-<summary><b> Web Development & Frameworks</b></summary>
-<br>
-
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-
-</details>
-
-<details open>
-<summary><b> Cloud, Databases & Platforms</b></summary>
-<br>
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-
-</details>
-
-<details open>
-<summary><b> Development Platforms & Tools</b></summary>
-<br>
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-
-</details>
+ERROR DETECTED: Kernel Panic avoided. Motto: "Everything is RELATIVE..."
+BOOT SEQUENCE INITIATED...
+</pre>
 
 ---
 
-## 📊 GitHub Analytics
+## COMPATIBILITY_LAYER
 
-<p align="center">
-  <img width="60%" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Shravan4507&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF&icon_color=6C63FF&count_private=true" alt="GitHub Stats" />
+<p align="left">
+  <a href="https://react.dev/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/react.svg" height="45" alt="react" />
+  </a>
+  <a href="https://vite.dev/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/vite.svg" height="45" alt="vite" />
+  </a>
+  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/typescript-svgrepo-com.svg" height="45" alt="typescript" />
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+    <img src="assets/icons/javascript-svgrepo-com.svg" height="45" alt="javascript" />
+  </a>
+  <a href="https://www.python.org/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/python-svgrepo-com.svg" height="45" alt="python" />
+  </a>
+  <a href="https://kotlinlang.org/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/kotlin-svgrepo-com.svg" height="45" alt="kotlin" />
+  </a>
+  <a href="https://www.java.com/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/java-svgrepo-com.svg" height="45" alt="java" />
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer">
+    <img src="assets/icons/html-5-svgrepo-com.svg" height="45" alt="html" />
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer">
+    <img src="assets/icons/css-3-svgrepo-com.svg" height="45" alt="css" />
+  </a>
+  <a href="https://firebase.google.com/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/firebase-svgrepo-com.svg" height="45" alt="firebase" />
+  </a>
+  <a href="https://cloud.google.com/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/gcp-svgrepo-com.svg" height="45" alt="gcp" />
+  </a>
+  <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/aws-color.svg" height="45" alt="aws" />
+  </a>
+  <a href="https://azure.microsoft.com/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/azure-color.svg" height="45" alt="azure" />
+  </a>
+  <a href="https://vercel.com/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/vercel-fill-svgrepo-com.svg" height="45" alt="vercel" />
+  </a>
+  <a href="https://github.com/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/github-142-svgrepo-com.svg" height="45" alt="github" />
+  </a>
+  <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/vs-code-svgrepo-com.svg" height="45" alt="vscode" />
+  </a>
+  <a href="https://cursor.com/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/cursor.svg" height="45" alt="cursor" />
+  </a>
+  <a href="https://www.figma.com/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/figma-color.svg" height="45" alt="figma" />
+  </a>
+  <a href="https://modelcontextprotocol.io/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/mcp.svg" height="45" alt="mcp" />
+  </a>
+  <a href="https://openai.com/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/openai.svg" height="45" alt="openai" />
+  </a>
+  <a href="https://claude.ai/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/claude-ai-icon.svg" height="45" alt="claude" />
+  </a>
+  <a href="https://www.anthropic.com/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/Anthropic--Streamline-Simple-Icons.svg" height="45" alt="anthropic" />
+  </a>
+  <a href="https://gemini.google.com/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/gemini-color.svg" height="45" alt="gemini-color" />
+  </a>
+  <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/google-color-svgrepo-com.svg" height="45" alt="google" />
+  </a>
+  <a href="https://x.ai/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/grok.svg" height="45" alt="grok" />
+  </a>
+  <a href="https://www.meta.ai/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/metaai-color.svg" height="45" alt="metaai" />
+  </a>
+  <a href="https://www.perplexity.ai/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/perplexity-color.svg" height="45" alt="perplexity" />
+  </a>
+  <a href="https://ollama.com/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/ollama.svg" height="45" alt="ollama" />
+  </a>
+  <a href="https://notebooklm.google.com/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/notebooklm.svg" height="45" alt="notebooklm" />
+  </a>
+  <a href="https://elevenlabs.io/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/elevenlabs.svg" height="45" alt="elevenlabs" />
+  </a>
+  <a href="https://openclaw.org/" target="_blank" rel="noreferrer">
+    <img src="assets/icons/openclaw-color.svg" height="45" alt="openclaw" />
+  </a>
+  <a href="https://github.com/google-deepmind/antigravity" target="_blank" rel="noreferrer">
+    <img src="assets/icons/Google_Antigravity-logo_brandlogos.net_e23c83.svg" height="45" alt="antigravity" />
+  </a>
+  <a href="https://instagram.com/069.f5" target="_blank" rel="noreferrer">
+    <img src="assets/icons/instagram-1-svgrepo-com.svg" height="45" alt="instagram" />
+  </a>
 </p>
 
+---
+
+## SYSTEM_ANALYTICS
+
 <p align="center">
-  <img width="40%" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Shravan4507&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6C63FF" alt="Top Languages" />
+  <img width="48%" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Shravan4507&show_icons=true&theme=default&bg_color=000000&title_color=a6e3a1&text_color=cdd6f4&icon_color=89b4fa&border_color=313244&border_radius=16&count_private=true" alt="GitHub Stats" />
+  <img width="48%" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Shravan4507&layout=compact&theme=default&bg_color=000000&title_color=a6e3a1&text_color=cdd6f4&border_color=313244&border_radius=16" alt="Top Languages" />
 </p>
 
 <p align="center">
   <a href="https://github.com/Shravan4507">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shravan4507&bg_color=0D1117&color=6C63FF&line=6C63FF&point=FFFFFF&area=true&hide_border=true" alt="Activity Graph" />
+    <img width="97%" src="https://github-readme-activity-graph.vercel.app/graph?username=Shravan4507&bg_color=000000&color=cdd6f4&title_color=a6e3a1&line=89b4fa&point=a6e3a1&area=true&area_color=89b4fa&border_color=313244&radius=16&hide_border=false" alt="Activity Graph" />
   </a>
 </p>
 
@@ -117,13 +174,6 @@ Current_status: Designing, Building, Optimizing
   </picture>
 </p>
 
----
-
-### -.- GITHUB_METRICS
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Shravan4507/Shravan4507/output/github-metrics.svg" width="100%" alt="GitHub Metrics" />
-</p>
 
 ---
 
@@ -131,38 +181,35 @@ Current_status: Designing, Building, Optimizing
 
 <p align="center">
   <a href="https://discord.com/users/844025108951597077" target="_blank">
-    <img src="https://lanyard.cnrad.dev/api/844025108951597077?theme=dark&bg=0d1117&animated=true" alt="Discord Presence" />
+    <img src="https://lanyard.cnrad.dev/api/844025108951597077?theme=dark&bg=000000&borderRadius=16px&animated=true" alt="Discord Presence" />
   </a>
 </p>
 
 ---
 
-## 🎯 Current Focus
+## CURRENT_FOCUS
 
-<div align="center">
-
-| Area | Details |
-|:---:|:---|
-| Agentic AI | Model Context Protocol (MCP), Multi-Agent Pipelines, Autonomy |
-| Front-End | React, Vite, TypeScript, and fluid UX micro-animations |
-| Back-End / Cloud | Firebase, Google Cloud Platform (GCP), AWS, and Azure |
-
-</div>
+<pre style="background: #000000ff; color: #cdd6f4; border-radius: 16px; padding: 20px; border: 1.5px solid #313244; font-family: 'Fira Code', 'Courier New', monospace; font-size: 14px; line-height: 1.6; text-align: left; max-width: 800px; margin: 0 auto;">
+<span style="color: #a6e3a1;">$ cat current_focus.json</span>
+{
+  <span style="color: #89b4fa;">"agentic_ai"</span>: [<span style="color: #a6e3a1;">"Model Context Protocol (MCP)"</span>, <span style="color: #a6e3a1;">"Multi-Agent Pipelines"</span>, <span style="color: #a6e3a1;">"Autonomy"</span>],
+  <span style="color: #89b4fa;">"front_end"</span>:  [<span style="color: #a6e3a1;">"React"</span>, <span style="color: #a6e3a1;">"Vite"</span>, <span style="color: #a6e3a1;">"TypeScript"</span>, <span style="color: #a6e3a1;">"Fluid UX Micro-Animations"</span>],
+  <span style="color: #89b4fa;">"back_end"</span>:   [<span style="color: #a6e3a1;">"Firebase"</span>, <span style="color: #a6e3a1;">"Google Cloud Platform (GCP)"</span>, <span style="color: #a6e3a1;">"AWS"</span>, <span style="color: #a6e3a1;">"Azure"</span>]
+}
+</pre>
 
 ---
 
 <div align="center">
 
-### *“Everything is RELATIVE...”*
+<pre style="background: #000000ff; color: #cdd6f4; border-radius: 16px; padding: 15px; border: 1.5px solid #313244; font-family: 'Fira Code', monospace; font-size: 13px; text-align: center; max-width: 800px; margin: 0 auto; line-height: 1.6;">
+<span style="color: #89b4fa;">[SYSTEM INFO]</span> Open to collaborating on Agentic AI, Full-Stack, and Systems-focused projects.
+<span style="color: #f38ba8;">[STATUS]</span> "Everything is RELATIVE..."
+<span style="color: #a6e3a1;">[ACTION]</span> If you find something useful here, consider giving it a ⭐!
+</pre>
 
 <br>
 
-**Open to collaborating on Agentic AI, Full-Stack, and Systems-focused projects**
-
-If you find something useful here, consider giving it a ⭐!
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=6C63FF&height=100&section=footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=1a1f26&height=100&section=footer"/>
 
 </div>
