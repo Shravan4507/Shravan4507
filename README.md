@@ -2,7 +2,7 @@
   <img src="./assets/terminal_header.svg" width="800" />
 </p>
 
-# 📍 THE KERNAL ERROR
+# 📍 THE KERNEL ERROR
 
 > **A sanctuary for the architects of depth.**
 > Where the absolute core of the machine meets the elevated discourse of the humans who command it.
@@ -125,6 +125,14 @@
 
 ---
 
+### -.- GITHUB_METRICS
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Shravan4507/Shravan4507/output/github-metrics.svg" width="100%" alt="GitHub Metrics" />
+</p>
+
+---
+
 ### -.- FREQUENCY_SYNC
 
 <p align="center">
@@ -138,7 +146,11 @@
 ### -.- CONTRIBUTION_SNAKE
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Shravan4507/Shravan4507/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shravan4507/Shravan4507/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Shravan4507/Shravan4507/output/github-contribution-grid-snake.svg" />
+    <img alt="Snake animation" src="https://raw.githubusercontent.com/Shravan4507/Shravan4507/output/github-contribution-grid-snake.svg" />
+  </picture>
 </p>
 
 ---
