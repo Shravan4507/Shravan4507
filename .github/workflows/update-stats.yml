@@ -23,6 +23,10 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install dependencies
+        run: |
+          pip install pillow
+
       - name: Generate Neofetch SVGs
         env:
           ACCESS_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
