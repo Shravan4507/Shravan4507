@@ -1,0 +1,46 @@
+<svg width="780" height="340" viewBox="0 0 780 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #f8f9fa; stroke: #e2e8f0; stroke-width: 1.5; rx: 16px; }
+    .header-bar { fill: #edf2f7; rx: 16px; }
+    .ascii { fill: #059669; font-family: "Fira Code", "Courier New", monospace; font-size: 13px; font-weight: 700; whitespace: pre; }
+    .title { fill: #2563eb; font-family: "Fira Code", "Courier New", monospace; font-size: 15px; font-weight: 700; }
+    .user { fill: #059669; font-weight: 700; }
+    .sep { fill: #64748b; }
+    .key { fill: #2563eb; font-family: "Fira Code", "Courier New", monospace; font-size: 13px; font-weight: 600; }
+    .val { fill: #1e293b; font-family: "Fira Code", "Courier New", monospace; font-size: 13px; }
+    .accent { fill: #dc2626; }
+  </style>
+  <rect x="1" y="1" width="778" height="338" class="bg" />
+  <path d="M1 17C1 8.16344 8.16344 1 17 1H763C771.837 1 779 8.16344 779 17V36H1V17Z" class="header-bar" />
+  <circle cx="20" cy="18" r="5.5" fill="#ff5f56" />
+  <circle cx="36" cy="18" r="5.5" fill="#ffbd2e" />
+  <circle cx="52" cy="18" r="5.5" fill="#27c93f" />
+  <text x="390" y="23" text-anchor="middle" class="val" font-size="12" fill="#64748b">shravan@antigravity-core:~</text>
+  <text x="35" y="75" class="ascii">   /\___/\   </text>
+  <text x="35" y="101" class="ascii">  (  o.o  )  </text>
+  <text x="35" y="127" class="ascii">   (  =  )   </text>
+  <text x="35" y="153" class="ascii">  /   ^   \  </text>
+  <text x="35" y="179" class="ascii"> ( |  |  | ) </text>
+  <text x="35" y="205" class="ascii"> (__|__|__)  </text>
+  <text x="35" y="231" class="ascii"> SHRVAN-CORE </text>
+  <line x1="210" y1="50" x2="210" y2="310" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4 4" />
+  <text x="235" y="70" class="title"><tspan class="user">shravan</tspan>@<tspan fill="#1e293b">antigravity-core</tspan></text>
+  <text x="235" y="85" class="sep">-----------------------------------------</text>
+  <text x="235" y="110" class="key">OS: <tspan class="val">Agentic AI OS v4.0 (x86_64)</tspan></text>
+  <text x="235" y="131" class="key">Uptime: <tspan class="val">2 yrs, 12 mos, 0 days</tspan></text>
+  <text x="235" y="152" class="key">Host: <tspan class="val">Model Context Protocol (MCP)</tspan></text>
+  <text x="235" y="173" class="key">Repos: <tspan class="val">11 public repositories</tspan></text>
+  <text x="235" y="194" class="key">Commits: <tspan class="val">350 total contributions</tspan></text>
+  <text x="235" y="215" class="key">Stars: <tspan class="val">25 stars earned</tspan></text>
+  <text x="235" y="236" class="key">Followers: <tspan class="val">3 network nodes</tspan></text>
+  <text x="235" y="257" class="key">Stack: <tspan class="val">React • TypeScript • Python • MCP</tspan></text>
+  <text x="235" y="278" class="key">Status: <tspan class="val">Everything is RELATIVE...</tspan></text>
+  <rect x="235" y="300" width="22" height="14" rx="3" fill="#f38ba8" />
+  <rect x="263" y="300" width="22" height="14" rx="3" fill="#fab387" />
+  <rect x="291" y="300" width="22" height="14" rx="3" fill="#f9e2af" />
+  <rect x="319" y="300" width="22" height="14" rx="3" fill="#a6e3a1" />
+  <rect x="347" y="300" width="22" height="14" rx="3" fill="#89b4fa" />
+  <rect x="375" y="300" width="22" height="14" rx="3" fill="#cba6f7" />
+  <rect x="403" y="300" width="22" height="14" rx="3" fill="#f5e0dc" />
+  <rect x="431" y="300" width="22" height="14" rx="3" fill="#585b70" />
+</svg>
