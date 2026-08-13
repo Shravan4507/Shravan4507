@@ -112,30 +112,84 @@ def calculate_uptime(start_date):
     parts.append(f"{days} day{'s' if days != 1 else ''}")
     return ", ".join(parts)
 
-def fetch_profile_image_b64(user_name):
-    """Fetches user avatar (or local assets/profile.png if present) and returns base64 data URI."""
-    local_img = os.path.join("assets", "profile.png")
-    if os.path.exists(local_img):
-        try:
-            with open(local_img, "rb") as f:
-                encoded = base64.b64encode(f.read()).decode("utf-8")
-                print("[SUCCESS] Loaded local assets/profile.png avatar!")
-                return f"data:image/png;base64,{encoded}"
-        except Exception as e:
-            print(f"[WARN] Failed to read local profile.png: {e}")
-            
-    try:
-        url = f"https://github.com/{user_name}.png"
-        req = urllib.request.Request(url, headers={'User-Agent': 'Python-Neofetch-Generator'})
-        with urllib.request.urlopen(req) as resp:
-            encoded = base64.b64encode(resp.read()).decode("utf-8")
-            print("[SUCCESS] Fetched & base64-encoded profile picture from GitHub!")
-            return f"data:image/png;base64,{encoded}"
-    except Exception as e:
-        print(f"[WARN] Profile picture fetch failed: {e}")
-        return None
+def fetch_profile_ascii(user_name):
+    """Fetches user photo (local assets/profile.png or GitHub avatar) and converts it to high-res 36x22 ASCII portrait."""
+    img = None
+    for ext in ["png", "jpg", "jpeg", "webp"]:
+        local_path = os.path.join("assets", f"profile.{ext}")
+        if os.path.exists(local_path):
+            try:
+                from PIL import Image, ImageEnhance, ImageFilter
+                img = Image.open(local_path).convert('L')
+                print(f"[SUCCESS] Loaded local photo from {local_path}!")
+                break
+            except Exception as e:
+                print(f"[WARN] Failed loading local image {local_path}: {e}")
 
-def generate_neofetch_svg(stats, theme="dark", profile_b64=None):
+    if img is None:
+        try:
+            from PIL import Image, ImageEnhance, ImageFilter
+            import io
+            url = f"https://github.com/{user_name}.png"
+            req = urllib.request.Request(url, headers={'User-Agent': 'Python-Neofetch-Generator'})
+            with urllib.request.urlopen(req) as resp:
+                img_data = resp.read()
+            img = Image.open(io.BytesIO(img_data)).convert('L')
+            print("[SUCCESS] Fetched profile picture from GitHub!")
+        except Exception as e:
+            print(f"[WARN] Profile picture fetch failed: {e}")
+            return [
+                r"            ...:::....              ",
+                r"         .:--===+====--:.           ",
+                r"       .:==+*%%##@@##%%+=:.         ",
+                r"     .:=+*%#@@@$@=:..::-++-:.       ",
+                r"    .:=*%#@$$$@@.        .+=:.      ",
+                r"   .:=*%@$$@@@$#  ...      *+-:     ",
+                r"   .=+%@$$$$$@$@-+@$$*-:    .  .    ",
+                r"  .:+*#@$$$$$@$@@$@@@%%=        :   ",
+                r"  :-+%@$$$$$$@@@*@@$@@@=  .. .   .  ",
+                r" .-=*#@$$@@@@$$%#@#@$$%  -===-   :  ",
+                r" .-=*#@$@$$$$@=:@@@#*=: =::=%+   :  ",
+                r" .-=*#@@$@*=.  .@$$@      .%@.   :. ",
+                r" .-=+#@@%       .*%.       -@:  .-. ",
+                r" .-=+#@$.                   **   -  ",
+                r" .-=+%@@                    .:   .. ",
+                r" :-=+*@+                    :-      ",
+                r"   :=+#.                    --      ",
+                r"   :-++                     :.      ",
+                r"         SHRVAN // CORE             "
+            ]
+
+    try:
+        from PIL import ImageEnhance, ImageFilter
+        # High contrast and sharpening for crisp feature extraction
+        img = ImageEnhance.Contrast(img).enhance(2.8)
+        img = img.filter(ImageFilter.SHARPEN)
+
+        # 36 chars wide x 22 lines high
+        img = img.resize((36, 22))
+        chars = [' ', ' ', '.', ':', '-', '=', '+', '*', '%', '#', '@', '$']
+
+        ascii_lines = []
+        for y in range(img.height):
+            line = ""
+            for x in range(img.width):
+                val = img.getpixel((x, y))
+                if val < 40: # remove dark background noise
+                    line += " "
+                else:
+                    idx = int((val / 255.0) * (len(chars) - 1))
+                    line += chars[idx]
+            ascii_lines.append(line)
+            
+        ascii_lines.append("         SHRVAN // CORE             ")
+        print("[SUCCESS] Converted photo into 36x22 high-resolution ASCII portrait!")
+        return ascii_lines
+    except Exception as e:
+        print(f"[WARN] Error converting image to ASCII: {e}")
+        return []
+
+def generate_neofetch_svg(stats, theme="dark", ascii_art=None):
     is_dark = (theme == "dark")
     
     # Palette definition
@@ -148,7 +202,9 @@ def generate_neofetch_svg(stats, theme="dark", profile_b64=None):
     val_color = "#cdd6f4" if is_dark else "#0f172a"
     accent_color = "#f38ba8" if is_dark else "#dc2626"
     sub_color = "#9399b2" if is_dark else "#64748b"
-    glow_border = "#89b4fa" if is_dark else "#3b82f6"
+
+    if not ascii_art:
+        ascii_art = fetch_profile_ascii(USER_NAME)
 
     uptime_str = calculate_uptime(stats["joined_date"])
 
@@ -167,20 +223,15 @@ def generate_neofetch_svg(stats, theme="dark", profile_b64=None):
     # Render SVG XML
     svg_lines = []
     svg_lines.append(f'<svg width="780" height="340" viewBox="0 0 780 340" fill="none" xmlns="http://www.w3.org/2000/svg">')
-    svg_lines.append(f'  <defs>')
-    svg_lines.append(f'    <clipPath id="avatar-clip">')
-    svg_lines.append(f'      <rect x="35" y="60" width="145" height="145" rx="18" />')
-    svg_lines.append(f'    </clipPath>')
-    svg_lines.append(f'  </defs>')
     svg_lines.append(f'  <style>')
     svg_lines.append(f'    .bg {{ fill: {bg_color}; stroke: {border_color}; stroke-width: 1.5; rx: 16px; }}')
     svg_lines.append(f'    .header-bar {{ fill: {header_bar}; rx: 16px; }}')
+    svg_lines.append(f'    .ascii {{ fill: {prompt_color}; font-family: "Fira Code", "Cascadia Code", "JetBrains Mono", "Courier New", monospace; font-weight: 700; }}')
     svg_lines.append(f'    .title {{ fill: {title_color}; font-family: "Fira Code", "Cascadia Code", "JetBrains Mono", "Courier New", monospace; font-size: 15px; font-weight: 700; }}')
     svg_lines.append(f'    .user {{ fill: {prompt_color}; font-weight: 700; }}')
     svg_lines.append(f'    .sep {{ fill: {sub_color}; }}')
     svg_lines.append(f'    .key {{ fill: {key_color}; font-family: "Fira Code", "Cascadia Code", "JetBrains Mono", "Courier New", monospace; font-size: 13px; font-weight: 600; }}')
     svg_lines.append(f'    .val {{ fill: {val_color}; font-family: "Fira Code", "Cascadia Code", "JetBrains Mono", "Courier New", monospace; font-size: 13px; }}')
-    svg_lines.append(f'    .badge-txt {{ fill: {val_color}; font-family: "Fira Code", "Cascadia Code", monospace; font-size: 12px; font-weight: 700; }}')
     svg_lines.append(f'  </style>')
 
     # Background window
@@ -193,37 +244,29 @@ def generate_neofetch_svg(stats, theme="dark", profile_b64=None):
     svg_lines.append(f'  <circle cx="52" cy="18" r="5.5" fill="#27c93f" />')
     svg_lines.append(f'  <text x="390" y="23" text-anchor="middle" class="val" font-size="12" fill="{sub_color}">shravan@antigravity-core:~</text>')
 
-    # Avatar Image (Left Side)
-    if profile_b64:
-        svg_lines.append(f'  <image href="{profile_b64}" x="35" y="60" width="145" height="145" clip-path="url(#avatar-clip)" />')
-        svg_lines.append(f'  <rect x="35" y="60" width="145" height="145" rx="18" fill="none" stroke="{glow_border}" stroke-width="2" />')
-    else:
-        # Fallback rect
-        svg_lines.append(f'  <rect x="35" y="60" width="145" height="145" rx="18" fill="{header_bar}" stroke="{glow_border}" stroke-width="2" />')
-
-    # Profile Badges under Avatar
-    svg_lines.append(f'  <rect x="35" y="220" width="145" height="28" rx="8" fill="{header_bar}" stroke="{border_color}" />')
-    svg_lines.append(f'  <text x="107" y="238" text-anchor="middle" class="badge-txt" fill="{prompt_color}">SHRVAN // OS</text>')
-
-    svg_lines.append(f'  <rect x="35" y="258" width="145" height="26" rx="8" fill="{header_bar}" stroke="{border_color}" />')
-    svg_lines.append(f'  <text x="107" y="275" text-anchor="middle" class="val" font-size="11" fill="{sub_color}">Agentic AI Core</text>')
+    # ASCII Portrait (Left Side) - WITH xml:space="preserve"
+    y_start = 58
+    line_spacing = 11.2
+    font_sz = "8.3px"
+    for i, line in enumerate(ascii_art):
+        svg_lines.append(f'  <text x="12" y="{y_start + i * line_spacing}" class="ascii" font-size="{font_sz}" xml:space="preserve">{line}</text>')
 
     # Vertical Separator Line
     svg_lines.append(f'  <line x1="215" y1="50" x2="215" y2="310" stroke="{border_color}" stroke-width="1.5" stroke-dasharray="4 4" />')
 
     # Right Side Content Header
-    svg_lines.append(f'  <text x="240" y="70" class="title"><tspan class="user">shravan</tspan>@<tspan fill="{val_color}">antigravity-core</tspan></text>')
-    svg_lines.append(f'  <text x="240" y="85" class="sep">-----------------------------------------</text>')
+    svg_lines.append(f'  <text x="235" y="70" class="title"><tspan class="user">shravan</tspan>@<tspan fill="{val_color}">antigravity-core</tspan></text>')
+    svg_lines.append(f'  <text x="235" y="85" class="sep">-----------------------------------------</text>')
 
     # System Info Key-Values
     y_info = 110
     for key, val in info_lines:
-        svg_lines.append(f'  <text x="240" y="{y_info}" class="key">{key}: <tspan class="val">{val}</tspan></text>')
+        svg_lines.append(f'  <text x="235" y="{y_info}" class="key">{key}: <tspan class="val">{val}</tspan></text>')
         y_info += 21
 
     # Terminal Color Blocks Palette (Bottom Right)
     colors = ["#f38ba8", "#fab387", "#f9e2af", "#a6e3a1", "#89b4fa", "#cba6f7", "#f5e0dc", "#585b70"]
-    x_color = 240
+    x_color = 235
     for c in colors:
         svg_lines.append(f'  <rect x="{x_color}" y="300" width="22" height="14" rx="3" fill="{c}" />')
         x_color += 28
@@ -234,17 +277,17 @@ def generate_neofetch_svg(stats, theme="dark", profile_b64=None):
 def main():
     print("[INIT] Fetching GitHub Stats for Neofetch banner...")
     stats = fetch_github_stats()
-    profile_b64 = fetch_profile_image_b64(USER_NAME)
+    profile_ascii = fetch_profile_ascii(USER_NAME)
     
     os.makedirs("assets", exist_ok=True)
 
-    dark_svg = generate_neofetch_svg(stats, theme="dark", profile_b64=profile_b64)
+    dark_svg = generate_neofetch_svg(stats, theme="dark", ascii_art=profile_ascii)
     dark_path = os.path.join("assets", "neofetch_dark.svg")
     with open(dark_path, "w", encoding="utf-8") as f:
         f.write(dark_svg)
     print(f"[DONE] Saved Dark Neofetch SVG -> {dark_path}")
 
-    light_svg = generate_neofetch_svg(stats, theme="light", profile_b64=profile_b64)
+    light_svg = generate_neofetch_svg(stats, theme="light", ascii_art=profile_ascii)
     light_path = os.path.join("assets", "neofetch_light.svg")
     with open(light_path, "w", encoding="utf-8") as f:
         f.write(light_svg)
